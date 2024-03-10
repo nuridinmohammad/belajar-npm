@@ -1,0 +1,30 @@
+{
+  "name": "belajar-npm",
+  "version": "1.0.0",
+  "description": "belajar npm menggunakan node untuk memanajemen package",
+  "main": "index.js",
+  "type": "module",
+  "homepage": "www.instagram.com/mnuridin._",
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/nuridinmohammad"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "build": "node index.js",
+    "prestart": "echo 'Sebelum menjalankan Aplikasi'",
+    "start": "node index.js",
+    "poststart": "echo 'setalah menjalankan Aplikasi'",
+    "stop": "",
+    "uninstall": "",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "restart": "",
+    "version": ""
+  },
+  "author": "mohammad nuridin",
+  "license": "ISC",
+  "prettier": {
+    "printWidth": 255,
+    "semi": false
+  }
+}
