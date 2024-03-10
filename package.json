@@ -1,8 +1,13 @@
 {
-  "name": "belajar-npm",
+  "name": "npm",
   "version": "1.0.0",
   "description": "belajar npm menggunakan node untuk memanajemen package",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./@/write": "./write.js",
+    "./@/say-hello": "./say-hello.js",
+    "./@/components/sayGoodbye": "./components/sayGoodbye.js"
+  },
   "type": "module",
   "homepage": "www.instagram.com/mnuridin._",
   "repository": {
@@ -13,7 +18,7 @@
     "dev": "node index.js",
     "build": "node index.js",
     "prestart": "echo 'Sebelum menjalankan Aplikasi'",
-    "start": "node index.js",
+    "start": "node index",
     "poststart": "echo 'setalah menjalankan Aplikasi'",
     "stop": "",
     "uninstall": "",
@@ -26,5 +31,8 @@
   "prettier": {
     "printWidth": 255,
     "semi": false
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
   }
 }
